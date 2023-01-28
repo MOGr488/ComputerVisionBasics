@@ -53,10 +53,10 @@ for i in range(0, 25):
     radius = np.random.randint(5, high = 200)
     color = np.random.randint(0, high = 256, size = (3,)).tolist()
     pt = np.random.randint(0, high = 300, size = (2,))
-
+    # (Canvas, Center(X, Y), Radius, Color, Thickness)
     cv2.circle(canvas, tuple(pt), radius, color, -1)
 
-numbers = np.random.randint(0, high = 256, size = (3,)).tolist()
+# numbers = np.random.randint(0, high=256, size=(3,)).tolist()
 
 cv2.imshow("Canvas", canvas)
 cv2.waitKey(0)
