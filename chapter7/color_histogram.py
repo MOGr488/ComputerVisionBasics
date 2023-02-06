@@ -50,6 +50,6 @@ plt.colorbar(p)
 
 print("2D histogram shape: {}, with {} values".format(hist.shape, hist.flatten().shape[0]))
 
-hist = cv2.calcHist([image], [0, 1, 2],None, [8, 8, 8], [0, 256, 0, 256, 0, 256])
+hist = cv2.calcHist([image], [0, 1, 2], None, [8, 8, 8], [0, 256, 0, 256, 0, 256])
 print("3D histogram shape: {}, with {} values".format(hist.shape, hist.flatten().shape[0]))
 plt.show()
